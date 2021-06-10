@@ -2,7 +2,10 @@ package com.ch.appiwhiskey;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.ch.appiwhiskey.ApiManager.RetrofitClient;
@@ -14,7 +17,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class Destilerias extends AppCompatActivity {
+public class Destilerias extends AppCompatActivity implements AdapterView.OnItemClickListener {
     ListView lvDestileria;
     List<Destileria> listaDestilerias;
 
@@ -24,6 +27,7 @@ public class Destilerias extends AppCompatActivity {
         setContentView(R.layout.activity_destilerias);
         lvDestileria = findViewById(R.id.lvDestileria);
         getDestileriasFromApi();
+        lvDestileria.setOnItemClickListener(this);
 
     }
     private void getDestileriasFromApi(){
@@ -41,5 +45,12 @@ public class Destilerias extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Intent intent = new Intent(this, DestileriaDetalle.class);
+        intent.putExtra("objDestileria", listaDestilerias.get(position));
+        startActivity(intent);
     }
 }
