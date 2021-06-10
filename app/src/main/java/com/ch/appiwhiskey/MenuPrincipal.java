@@ -28,6 +28,9 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
         if (v.getId() == R.id.btnWhiskey) {
             Intent abrirWhiskey = new Intent(this, MainActivity.class);
             startActivity(abrirWhiskey);
+        }else if(v.getId() == R.id.btnDestileria){
+            Intent abrirDestileria = new Intent(this, Destilerias.class);
+            startActivity(abrirDestileria);
         }
     }
 

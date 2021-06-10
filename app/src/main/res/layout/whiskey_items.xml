@@ -14,7 +14,7 @@
         android:background="@android:color/holo_orange_dark"
         android:gravity="center_horizontal"
         android:padding="10dp"
-        android:rotationX="29"
+        android:rotationX="30"
         android:text="Nombre Whiskey"
         android:textAlignment="center"
         android:textColor="@color/black"
