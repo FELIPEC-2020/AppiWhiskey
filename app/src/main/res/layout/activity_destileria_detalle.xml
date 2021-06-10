@@ -4,79 +4,118 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
     tools:context=".DestileriaDetalle">
 
     <TextView
         android:id="@+id/txtNombreD"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginTop="129dp"
+        android:layout_marginTop="248dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:rotationX="30"
         android:text="Nombre"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtSlugD"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="20dp"
-        android:text="Slug"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombreD" />
-
-    <TextView
-        android:id="@+id/txtCountryD"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:text="Country"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombreD" />
-
-    <TextView
-        android:id="@+id/txtWhiskyBase"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="15dp"
-        android:text="Whisky Base"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSlugD" />
 
     <TextView
         android:id="@+id/txtWhiskybaseVotes"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:rotationX="30"
         android:text="Whisky Base Votes"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCountryD" />
+
+    <TextView
+        android:id="@+id/txtCountryD"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:rotationX="30"
+        android:text="Country"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreD" />
 
     <TextView
         android:id="@+id/txtWhiskyBaseRating"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="130dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="131dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:rotationX="30"
         android:text="Whisky Base Rating"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtWhiskyBase" />
 
-    <Button
-        android:id="@+id/btnVisitarD"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="64dp"
-        android:text="VISITAR"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+    <TextView
+        android:id="@+id/txtSlugD"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:text="Slug"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtWhiskyBaseRating" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreD"
+        android:rotationX="30" />
+
+    <TextView
+        android:id="@+id/txtWhiskyBase"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:rotationX="30"
+        android:text="Whisky Base"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSlugD" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotationX="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dest1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

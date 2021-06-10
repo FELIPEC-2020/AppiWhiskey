@@ -4,27 +4,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
     tools:context=".WhiskeyDatalle">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotationX="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wh1" />
+
+    <TextView
+        android:id="@+id/txtBaseCurrency"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:rotationX="30"
+        android:text="Base Currency"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/txtListing"
+        app:layout_constraintTop_toBottomOf="@+id/txtReserverFee" />
 
     <TextView
         android:id="@+id/txtBuyersFee"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:rotationX="30"
         android:text="Buyers Fee"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintHorizontal_bias="0.626"
         app:layout_constraintStart_toEndOf="@+id/txtSlug"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <TextView
+        android:id="@+id/txtListing"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:rotationX="30"
+        android:text="Listing"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSellersFee" />
+
+    <TextView
+        android:id="@+id/txtReserverFee"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:rotationX="30"
+        android:text="ReserverFee"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toEndOf="@+id/txtSellersFee"
+        app:layout_constraintTop_toBottomOf="@+id/txtBuyersFee" />
+
+    <TextView
+        android:id="@+id/txtSellersFee"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:rotationX="30"
+        android:text="Sellers Fee"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtListing"
+        app:layout_constraintTop_toBottomOf="@+id/txtSlug" />
 
     <TextView
         android:id="@+id/txtNombre"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="212dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:rotationX="30"
         android:text="Nombre"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,66 +125,29 @@
         android:id="@+id/txtSlug"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:rotationX="30"
         android:text="Slug"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtSellersFee"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
-
-    <TextView
-        android:id="@+id/txtSellersFee"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:text="Sellers Fee"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSlug" />
-
-    <TextView
-        android:id="@+id/txtBaseCurrency"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="28dp"
-        android:text="Base Currency"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtListing"
-        app:layout_constraintTop_toBottomOf="@+id/txtReserverFee" />
-
-    <TextView
-        android:id="@+id/txtReserverFee"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
-        android:text="ReserverFee"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toEndOf="@+id/txtSellersFee"
-        app:layout_constraintTop_toBottomOf="@+id/txtBuyersFee" />
-
-    <TextView
-        android:id="@+id/txtListing"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="16dp"
-        android:text="Listing"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSellersFee" />
 
     <Button
         android:id="@+id/btnVisitar"
         android:layout_width="200dp"
         android:layout_height="60dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/design_default_color_error"
+        android:rotationX="30"
         android:text="VISITAR"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtBaseCurrency" />
 
