@@ -52,10 +52,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         });
 
     }
-
+    //al dar clic a un whiskey de la lista lleva al detalle de este
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        //Intent intent = new Intent(this, WhiskeyDetails.class);
-        //intent.putExtra()
+        Intent intent = new Intent(this, WhiskeyDatalle.class);
+        intent.putExtra("objWhiskey", myWhiskeys.get(position));
+        startActivity(intent);
     }
 }
